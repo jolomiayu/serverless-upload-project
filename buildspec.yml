@@ -8,4 +8,4 @@ phases:
 
 artifacts:
   files:
-    - lambda/function.zip
+    - function.zip
