@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - cd lambda
+      - zip -r function.zip .
+
+artifacts:
+  files:
+    - lambda/function.zip
