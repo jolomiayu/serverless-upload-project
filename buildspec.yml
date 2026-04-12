@@ -7,5 +7,6 @@ phases:
       - zip -r function.zip .
 
 artifacts:
+  base-directory: lambda
   files:
     - function.zip
