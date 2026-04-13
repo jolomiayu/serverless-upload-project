@@ -3,10 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - cd lambda
-      - zip -r function.zip .
+      - echo "Building..."
 
 artifacts:
   base-directory: lambda
   files:
-    - function.zip
+    - lambda_function.py
