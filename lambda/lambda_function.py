@@ -8,8 +8,10 @@ s3 = boto3.client('s3', region_name='eu-west-1')
 BUCKET = os.environ['BUCKET_NAME']
 
 def lambda_handler(event, context):
+    print("Incoming event:", event)
 
     path = event.get("rawPath", "")
+    print("Request path:", path)
 
     # UPLOAD URL
     if path.endswith("/upload-url"):
